@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: ghostwhite;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#nav{
+height: 135px;
+width:100%;
+background-color: black;
+display: flex;
+align-items: center;
+padding: 0 150px;
+gap: 55px;
+justify-content: flex-start;
+position: fixed;
+z-index: 99;
+}
+
+#nav h4{
+text-transform: uppercase;
+font-weight: 500;
+
+}
+video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+position: fixed;
+}
+#main{
+    position:relative;
+    background-color: rgba(0,0,0, 0.326);
+}
+#page1 h1{text-transform: uppercase;
+    font-weight: 1500;    
+    z-index: 1;
+}

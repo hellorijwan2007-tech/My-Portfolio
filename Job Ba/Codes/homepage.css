@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #000000;
+    color: azure;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0,0,0.06);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0 ;
+    transition: all .50s ease ;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a{
+    font-size:1.8rem ;
+    color:white;
+    margin-left:4rem;
+    font-weight:500;
+    transition: 0.3s ease;
+    border-bottom:3px solid transparent;   
+ }
+ nav a:hover,
+ nav a.active{
+    color:#b74b4b;
+    border-bottom:3px solid#b74b4b;
+ }
+@media(max-width:995px)
+{
+ nav{
+    position:fixed;
+    top:100%;
+    right: 0;
+    width:40%;
+    border-left:3px solid#b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    border-bottom-left-radius: 2rem;
+    padding: 1rem solid;
+    border-top: rgba(0, 0, 0, 0.1);
+    background-color: #161616;
+ }   
+}
+nav.active{
+    display: block;
+}
+nav a{
+    display: block;
+    font-size: 2rem;
+    margin:3rem 0;
+}
+
+nav a:hover,
+nav a.active{
+ padding:1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #b74b4b;
+}
+.right-content{
+    display: flex;
+    align-items: center;
+}
+#menu-icon{
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display:none;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+#hero {
+background-image: url("fashion\store.jpg");
+height: 90vh;
+width:100%;
+background-size: cover;
+background-position: top 25% right 0;
+color: azure;
+padding:0  80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+position: relative;
+grid-template-columns: repeat(2,1fr);
+gap:2rem; 
+}
+.hero-text h2{
+    font-size: var(--big-font);
+    font-weight: 900; 
+    margin: 15px 0;
+}
+.hero-text h5{
+    font-size:18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.hero p
+{
+    width: 100%;
+    max-width: 620px;
+    font-weight:400;
+color: darkgray;
+font-size: var(--p-font);
+line-height: 32px; 
+margin-bottom: 40px;
+}
+
+#hero button
+{
+    border: 0;
+    background-color: transparent;
+    color: azure;
+    padding: 40px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#hero .btn:hover{
+transform: scale(1.1);
+}
+.sec-p1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+width: 180px;
+text-align:center ;
+padding: 25px 15px;
+box-shadow: 20px 20px 34px rgba(0, 0,0,0.03);
+border:1px solid azure;
+border-radius: 4px;
+margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);   
+}
+#feature .fe-box h6{
+padding: 9px 8px 6px 8px;
+line-height: 1px;
+border-radius: 4px;
+color:azure;
+background-color: black;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align:center ;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0,0,0.03);
+    border:1px solid azure;
+    border-radius: 4px;
+    margin: 15px 0;
+    }
+    #feature .fe-box:hover{
+        box-shadow: 10px 10px 54px rgba(70,62,221,0.1);   
+    }
+    #feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1px;
+    border-radius: 4px;
+    color:azure;
+    background-color: black;
+    }
+    #feature .fe-box{
+        width: 180px;
+        text-align:center ;
+        padding: 25px 15px;
+        box-shadow: 20px 20px 34px rgba(0, 0,0,0.03);
+        border:1px solid azure;
+        border-radius: 4px;
+        margin: 15px 0;
+        }
+        #feature .fe-box:hover{
+            box-shadow: 10px 10px 54px rgba(70,62,221,0.1);   
+        }
+        #feature .fe-box h6{
+        padding: 9px 8px 6px 8px;
+        line-height: 1px;
+        border-radius: 4px;
+        color:azure;
+        background-color: black;
+        }
+#promotions{
+    text-align: center;
+}
+#promo-grid.promo-item{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20 px;
+    flex-wrap: wrap;
+}
+
+
+#promotions.promo-item{
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor:pointer;
+     box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+     margin:15px 0;
+     transition: 0.2s east;
+     position: relative;
+}
+#promotions.promo-item img{
+    width: 100%;
+    border-radius: 20px;
+}
+#promotions.promo-item hover{
+   box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#promotions.promo-item .des{
+    text-align:  start;
+    padding: 10px 0px;
+}
+#promotions.promo-item .des span{
+    color:black;
+    font-size: 12px;
+}
+#promotions.promo-item .des h5{
+    padding: 7px;
+    color: black;
+    font-size: 14px;
+}
+#promotions.promo-item .des i{
+font-size: 12px;
+color: rgb(243, 181, 25);
+}
+#promotions.promo-item .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #018178;
+}
+#promotions.promo-item .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e3f64a;
+    font-weight: 500;
+    color: #018178;
+    border: 1px solid #e3f64a;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.section-m1{
+    margin:40px 0;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+    background-image: url(clth.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius:4px ;
+    cursor:pointer;
+    border:none;
+    outline:none;transition: 0.2s;
+}
+#banner button:hover{
+background:#018178;
+color: #fff;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("sport.jpg");
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(fashion.jpg);
+}
+#banner3 .banner-box3{
+    background-image: url(selfcare.jpg);
+}
+#banner3 h2{
+    color:white;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color:white;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #4d4d4d;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color:#fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color:#fff;
+}
+#newsletter p span{
+    color:#e3ea15;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25cm;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0;
+}
+#newsletter button{
+    background-color: ghostwhite;
+    color: #018178;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+ font-size: 13px;
+ margin:0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    margin:0 0 8px 0;
+    text-decoration: none;
+    margin-bottom:10px;
+    color: #222;
+   } 
+   footer .follw i{
+    color:#465b52;
+    padding-right: 4px;
+    cursor:pointer;
+   }
+footer.row img{
+    border:1px solid #018178;
+    border-radius:6px;  
+}
+footer.follow i:hover,
+footer a:hover{
+    color:#018178
+}
